@@ -1,0 +1,1 @@
+print("我的第一个python 语句。hello world。")
