@@ -2,6 +2,7 @@
 
 chinese_zodiac = '猴鸡狗猪鼠牛虎兔龙蛇马羊'
 
+# 字符串 取值
 print (chinese_zodiac[0:4] )
 
 print (chinese_zodiac[-1])

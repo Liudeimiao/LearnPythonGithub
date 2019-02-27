@@ -5,6 +5,13 @@ zodiac_name = (u'摩羯座', u'水瓶座', u'双鱼座', u'白羊座', u'金牛�
 zodiac_days = ((1, 20), (2, 19), (3, 21), (4, 21), (5, 21), (6, 22),
               (7, 23), (8, 23), (9, 23), (10, 23), (11, 23), (12, 23))
 
+# Python 字典
+# 字典(dictionary)是除列表以外python之中最灵活的内置数据结构类型。列表是有序的对象集合，字典是无序的对象集合。
+#
+# 两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。
+#
+# 字典用"{ }"标识。字典由索引(key)和它对应的值value组成。 跟 java 的map 差不多。
+
 
 cz_num = {}
 for i in chinese_zodiac:
@@ -31,11 +38,10 @@ while True:
             break
         n += 1
     # 输出生肖和星座
-    print(zodiac_name[n])
-
-
+    print('你的星座是：%s' % zodiac_name[n])
     print('%s 年的生肖是 %s' % (year, chinese_zodiac[year % 12]))
 
+    # 给value 赋值。当有自己的生肖 就+1
     cz_num[chinese_zodiac[year % 12]] += 1
     z_num[zodiac_name[n]] += 1
 

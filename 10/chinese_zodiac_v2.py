@@ -2,8 +2,9 @@
 
 chinese_zodiac = '猴鸡狗猪鼠牛虎兔龙蛇马羊'
 
-# year =  int(input('请用户输入出生年份'))
-#
+year =  int(input('请用户输入出生年份'))
+
+print(year)
 # if(chinese_zodiac[year % 12]) == '狗':
 #     print ('狗年运势。。。')
 #
@@ -12,16 +13,34 @@ chinese_zodiac = '猴鸡狗猪鼠牛虎兔龙蛇马羊'
 #
 # for i in range(1,13):
 #     print(i)
-#
-# for year in range(2000,2019):
-#     print('%s 年的生肖是 %s' %(year, chinese_zodiac[year % 12]))
+
+#for 循环遍历 语法
+# for iterating_var in sequence:
+#    statements(s)
+
+
+for yearDemo in range(1900,2019):
+    if(yearDemo ==year):
+        print('%s 年的生肖是 %s' %(year, chinese_zodiac[year % 12]))
+
+fruits = ['apple','banana']
+for fruit in fruits:
+    if(fruit == 'apple'):
+        print('我是苹果')
+
+for letter in 'Python':     # 第一个实例
+
+   print('当前字母 :', letter)
+
+
 # import time
-num = 5
-while True:
-    num = num + 1
 
-    if num == 10:
-        continue
-
-    print(num)
+# num = 5
+# while True:
+#     num = num + 1
+#
+#     if num == 10:
+#         continue
+#
+#     print(num)
     # time.sleep(1)
