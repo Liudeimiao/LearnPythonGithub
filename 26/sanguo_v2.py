@@ -3,16 +3,16 @@ def find_item( hero ):
     with open('sanguo.txt',encoding='GB18030') as f:
         data = f.read().replace('\n','')
         name_num = re.findall(hero,data)
-        # print('主角 %s  出现 %s  次' %(hero, len(name_num)))
+        print('主角 %s  出现 %s  次' %(hero, len(name_num)))
 
     return len(name_num)
 
-
-
+var1 = find_item('劉備')
+print(var1)
 
 # 读取人物的信息
 name_dict = {}
-with open('name.txt') as f:
+with open('name.txt',encoding="UTF-8") as f:
     for line in f:
         names = line.split('|')
         for n in names:

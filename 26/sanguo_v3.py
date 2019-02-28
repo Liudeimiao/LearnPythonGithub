@@ -8,7 +8,7 @@ def find_main_charecters(charecter_name):
         # print('主角 %s 出现了%s 次'%(charecter_name,len(name_num)))
     return charecter_name, len(name_num)
 
-
+#名字字典
 name_dict = {}
 with open('name.txt', encoding='utf-8') as f:
     for line in f:
@@ -17,6 +17,7 @@ with open('name.txt', encoding='utf-8') as f:
             char_name, char_number = find_main_charecters(n)
             name_dict[char_name] = char_number
 
+#武器字典
 weapon_dict = {}
 with open('weapon.txt', encoding='utf-8') as f:
         i = 1
