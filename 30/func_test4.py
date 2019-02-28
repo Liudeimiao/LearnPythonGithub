@@ -16,9 +16,6 @@ def timmer(func):
 def i_can_sleep():
     time.sleep(3)
 
-
-
-
 # start_time = time.time()
 i_can_sleep()
 
