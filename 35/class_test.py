@@ -9,7 +9,7 @@
 
 class Player():    #定义一个类
     def __init__(self, name, hp, occu):
-        self.__name = name  # 变量被称作属性
+        self.name = name  # 变量被称作属性
         self.hp = hp
         self.occu = occu
     def print_role(self):    #定义一个方法
@@ -56,7 +56,7 @@ print('a1的类型 %s' %type(a1))
 print('a2的类型 %s' %type(a2))
 print('a3的类型 %s' %type(a3))
 
-print(isinstance(a2,Monster))
+# print(isinstance(a2,Monster))
 #
 # user1 = Player('tom',100,'war')  #类的实例化
 # user2 = Player('jerry',90,'master')

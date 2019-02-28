@@ -8,7 +8,15 @@ class Mythread(threading.Thread):
         print(current_thread().getName(),'stop')
 
 
-t1 = Mythread()
+class MyThread2(threading.Thread):
+    def run(self):
+        print(current_thread().getName(),'start')
+        print('run')
+        print(current_thread().getName(),'stop')
+
+
+
+t1 = MyThread2()
 t1.start()
 t1.join()
 

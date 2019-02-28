@@ -14,4 +14,4 @@ for i in range(1,6,1):
     t1 = threading.Thread(target=myThread,args=(i, i+1))
     t1.start()
 
-print(current_thread().getName(),'end')
+#print(current_thread().getName(),'end')
