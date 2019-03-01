@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 #
 # #绘制简单的曲线
-# plt.plot([1, 3, 5], [4, 8, 10])
-# plt.show()
+plt.plot([1, 3, 5], [4, 6, 10])
+plt.show()
 
 import numpy as np
 
@@ -59,16 +59,16 @@ import numpy as np
 # # 没啥用，只是让pandas 的plot() 方法在pyCharm上显示
 # plt.show()
 
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
-
-import warnings
-warnings.filterwarnings("ignore")
-
-iris = pd.read_csv("./iris_training.csv")
-
-sns.set(style="white", color_codes=True)
+# import matplotlib.pyplot as plt
+# import pandas as pd
+# import seaborn as sns
+#
+# import warnings
+# warnings.filterwarnings("ignore")
+#
+# iris = pd.read_csv("./iris_training.csv")
+#
+# sns.set(style="white", color_codes=True)
 
 
 # FacetGrid 一般绘图函数
@@ -77,6 +77,6 @@ sns.set(style="white", color_codes=True)
 # add_legend() 显示分类的描述信息
 # sns.FacetGrid(iris, hue="virginica", size=5).map(plt.scatter, "120", "4").add_legend()
 
-sns.FacetGrid(iris, hue="virginica", size=5).map(plt.scatter, "setosa", "versicolor").add_legend()
+#sns.FacetGrid(iris, hue="virginica", size=5).map(plt.scatter, "setosa", "versicolor").add_legend()
 # 没啥用，只是让pandas 的plot() 方法在pyCharm上显示
-plt.show()
+#plt.show()

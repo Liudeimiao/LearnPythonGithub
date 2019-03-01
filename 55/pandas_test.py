@@ -91,8 +91,8 @@ data = Series([1, NA, 2])
 # print(data2.dropna(axis=1, how='all'))
 #
 # data2.fillna(0)
-# print(data2.fillna(0, inplace=True))
-# print(data2)
+# # print(data2.fillna(0, inplace=True))
+# # print(data2)
 
 import numpy as np
 
