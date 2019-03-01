@@ -1,4 +1,6 @@
-# 日常应用比较广泛的模块是：
+# 日常应用比较广泛的模块是： 常用的标准库
+
+
 # 1. 文字处理的 re
 # 2. 日期类型的time、datetime
 # 3. 数字和数学类型的math、random
@@ -13,15 +15,30 @@
 # 12. 软件包发布的venv
 # 13. 运行服务的__main__
 
-
+#元字符
 # . ^ $ * + ? {m} {m,n} [] |  \d \D \s ()
-# ^$
-# .*?
+# .  点 ：匹配任意一个 字符。
+# shift +6 ^   以什么样的结果 做开头。
+# $ 以什么结尾  jpg$ 结尾。
+# *   a*  星号前面a 出现了 0次或者多次。
+#+ 加号前面出现 一次或者多次
+
+
+# ^$  匹配空行
+# .*? 匹配 贪婪模式。
 
 import re
 
+# group 从 1 开始，分组获取。 group() -->完整输出 2018-05-12
+# p = re.compile(r'(\d+)-(\d+)-(\d+)')
+# print(p.match('2018-05-12').group())
+# 输出
+# year,month,day  = p.match('2018-05-12').groups()
+#
+# print(year+month+day)
 
-p = re.compile(r'(\d+)-(\d+)-(\d+)')
+
+#p = re.compile(r'(\d+)-(\d+)-(\d+)')
 # print (p.match('aa2018-05-10bb').group(2) )
 # print (p.match('2018-05-10').groups() )
 #
@@ -36,6 +53,6 @@ p = re.compile(r'(\d+)-(\d+)-(\d+)')
 # print(p3)
 # findall()
 
-import  random
-print( random.randint(1,5))
-print( random.choice(['aa','bb','cc']))
+# import  random
+# print( random.randint(1,5))
+# print( random.choice(['aa','bb','cc']))
