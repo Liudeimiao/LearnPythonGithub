@@ -2,6 +2,7 @@ from urllib import request, parse
 
 url = 'http://httpbin.org/post'
 
+# 伪装成 Chrome 去 模拟页面请求请求。
 headers = {
 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
 "Accept-Encoding": "gzip, deflate, sdch",
@@ -17,7 +18,8 @@ dict = {
 'name': 'value'
 }
 
-data = bytes(parse.urlencode(dict), encoding='utf8')
+data = bytes(parse.urlencode(dict), encoding='utf8') # 字典重新编码
 req = request.Request(url=url, data=data, headers=headers, method='POST')
 response = request.urlopen(req)
 print(response.read().decode('utf-8'))
+
