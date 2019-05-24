@@ -1,0 +1,31 @@
+import  re
+
+def parse(text,word_dict):
+    text = text.lower()
+    word_list = re.findall(r'\w+',text)
+
+    for word in word_list:
+        word_dict[word] = word_dict.get(word,0)+1
+
+    return word_dict
+
+
+
+#初始化字典
+word_dict = {}
+
+with open('in.txt','r') as  fin:
+    for text in fin.readlines():
+        word_dict = parse(text,word_dict)
+
+
+
+
+#降序排列字典
+sort_dict = sorted(word_dict.items(),key= lambda item:item[1],reverse=True)
+
+#导出排序后文件
+
+with open('outE2.txt','w') as fout:
+    for word,freq in sort_dict:
+        fout.write('{} {}\n'.format(word,freq))
