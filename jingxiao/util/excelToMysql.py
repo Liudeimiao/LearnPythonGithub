@@ -11,7 +11,7 @@ def exportData():
                         filename=os.path.join(os.getcwd(), 'inputAPNdata.log'))
     logger = logging.getLogger()
 
-    #连接数据库信息
+    #连接数据库信息test
     try:
         conn = pymysql.connect(host='127.0.0.1', port=3306, user='root',
                                passwd='12345678', db='sd_ues', charset='utf8mb4')
