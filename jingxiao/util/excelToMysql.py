@@ -55,7 +55,7 @@ def exportData():
             if i !=0:
                 r1 = table.row_values(i)
                 ops.append((int(apnType), r1[0], r1[1], "", r1[3], 1, 0, updateTime))
-        #导入行数
+        #导入行数#
 
         # 批量插入
         insert_sql =  'INSERT INTO `sd_ues`.`apn_aggregate` (`apnType`, `apnId`, `apnName`, `apnName2`, `cityName`, `userCounts`, `delete_flag`, `update_date`) ' \
