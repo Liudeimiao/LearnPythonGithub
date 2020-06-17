@@ -20,7 +20,7 @@ table2 = data.sheets()[1]
 t = table.col_values(1)
 nrows2 = table.nrows
 
-# 获取当前时间
+# 获取当前时间#
 updateTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
 
 # sheet1 数据封装
